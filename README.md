@@ -44,7 +44,7 @@ by Loxsete | [Download](https://github.com/PRoX2011/programs4pros/blob/main/scre
 
 **Size: 1 disk sector**
 
-Endless animated screensaver for x16-PRos working in text (0x03) mode.
+Endless animated screensaver for x16-PRos working in graphics (320x200) mode.
 
 <img src="https://github.com/PRoX2011/programs4pros/blob/main/screen-saver/screen-saver.gif" width="65%">
 
