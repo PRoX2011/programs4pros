@@ -28,7 +28,7 @@ In order to better understand the principle of launching programs, I recommend l
 
 ### **1.** Hello-pros 
 
-by PRoX2011 | [Download](https://github.com/PRoX2011/programs4pros/blob/main/hello-pros/hello-pros.bin)
+by PRoX2011 | [Download](https://github.com/PRoX2011/programs4pros/blob/main/hello-pros/)
 
 **Size: lower than 1 disk sector**
 
