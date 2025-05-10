@@ -37,3 +37,15 @@ A minimal program for x16-PRos that displays the phrase "Hello, from x16-PRos!" 
 ![hello-pros](https://github.com/PRoX2011/programs4pros/blob/main/hello-pros/hello-pros.png)
 
 ---
+
+### **2.** Screen-saver
+
+by Loxsete | [Download](https://github.com/PRoX2011/programs4pros/blob/main/screen-saver/)
+
+**Size: 1 disk sector**
+
+Endless animated screensaver for x16-PRos working in text (0x03) mode.
+
+<img src="https://github.com/PRoX2011/programs4pros/blob/main/screen-saver/screen-saver.gif" width="65%">
+
+---
