@@ -1,25 +1,11 @@
 # Programs for x16 PRos
-Collection of programs for the [x16 PRos operating system](https://github.com/PRoX2011/x16-PRos/), which can be loaded using the load command.
+Collection of programs for the [x16 PRos operating system](https://github.com/PRoX2011/x16-PRos/), which can be loaded by pros terminal.
 
-At the time of version 16-Pros 0.3 free sectors are 45-50 and you can write your programs to them using dd:
+At the time of version 16-Pros 0.4 you can copy your programs to disk image using `mcopy`:
 ```bash
-dd if=[Your program.bin] of=x16pros.img bs=512 seek=[Sector number] conv=notrunc
+mcopy -i disk_img/x16pros.img PROGRAM.BIN ::/
 ```
-The program should occupy one disk sector (512 bytes). If your program takes up more space, please recompile the system by changing the start_program function:
-```nasm
-start_program:
-    pusha
-    mov ah, 0x02
-    mov al, [program size in sectors]
-    mov ch, 0
-    mov dh, 0
-    mov cl, [sector_number]
-    mov bx, [program offset (recomended 900h or 800h)]
-    int 0x13
-    jc .disk_error
-    jmp 800h
-    ret
-```
+The program maximum size is 32KB. If your program takes up more space, please recompile the system by changing the `disk_buffer` in `kernel.asm` file.
 In order to better understand the principle of launching programs, I recommend looking at the source code of the system kernel and its programs.
 
 ---
